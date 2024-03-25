@@ -7,11 +7,12 @@
 */
 
 :root {
-	--main-background-color: #223243;
-	--left-menu-background-color: #192431;
-	--section-one-background-color: #203953;
-	--section-two-background-color: #3a69a2;
-	--menu-item-default-underline-color: #28333e;
+    --main-background-color: #223243;
+    --left-menu-background-color: #192431;
+    --section-one-background-color: #203953;
+    --section-two-background-color: #3a69a2;
+    --menu-item-default-underline-color: #28333e;
+    --spotlights-background-color: rgb(26 39 55 / 90%);
 }
 
 html,
@@ -210,6 +211,16 @@ textarea {
     line-height: 1.75;
 }
 
+.hero-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-image {
+    padding-left: 40px;
+    height: 400px;
+}
+
 @media screen and (width <= 1680px) {
     body,
     input,
@@ -299,7 +310,11 @@ h1.major {
 }
 
 h1.major::after {
-    background-image: linear-gradient(to right, var(--main-background-color), var(--section-two-background-color));
+    background-image: linear-gradient(
+        to right,
+        var(--main-background-color),
+        var(--section-two-background-color)
+    );
     transition: max-width 0.2s ease;
     border-radius: 0.2em;
     bottom: 0;
@@ -610,7 +625,6 @@ hr.major {
 .row.gtr-50.gtr-uniform {
     margin-top: -0.75em;
 }
-
 
 .row {
 }
@@ -1145,6 +1159,16 @@ hr.major {
 }
 
 @media screen and (width <= 980px) {
+    .hero-image {
+        height: auto;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .hero-section {
+        flex-direction: column;
+    }
+
     .row {
         display: flex;
         flex-wrap: wrap;
@@ -2978,7 +3002,7 @@ body.is-ie .spotlights > section {
 
 .spotlights > section > .image::before {
     transition: opacity 1s ease;
-    background: rgb(49 36 80 / 90%);
+    background: var(--spotlights-background-color);
     content: '';
     display: block;
     height: 100%;
@@ -3610,7 +3634,11 @@ body.is-ie #sidebar > .inner {
 }
 
 #sidebar nav a::after {
-    background-image: linear-gradient(to right, var(--main-background-color), var(--section-two-background-color));
+    background-image: linear-gradient(
+        to right,
+        var(--main-background-color),
+        var(--section-two-background-color)
+    );
     transition: max-width 0.2s ease;
     max-width: 0;
 }

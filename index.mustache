@@ -43,6 +43,7 @@
 
             <!-- Intro -->
             <section id="intro" class="wrapper style1 fullscreen fade-up">
+                <div class='hero-section inner'>
                 <div class="inner">
                     <h1>{{main.heading}}</h1>
                     <p>
@@ -54,13 +55,15 @@
                         </li>
                     </ul>
                 </div>
+                <img class='hero-image' src='images/pro-2-cropped-square.webp' />
+                </div>
             </section>
 
             <!-- One -->
             <section id="one" class="wrapper style2 spotlights">
                 <section>
                     <a href="#" class="image">
-                        <img src="images/pic01.jpg" alt="" data-position="center center">
+                        <img src="{{{section1.item1.image}}}" alt="" data-position="center center">
                     </a>
                     <div class="content">
                         <div class="inner">
@@ -76,7 +79,7 @@
                 </section>
                 <section>
                     <a href="#" class="image">
-                        <img src="images/pic02.jpg" alt="" data-position="top center">
+                        <img src="{{{section1.item2.image}}}" alt="" data-position="top center">
                     </a>
                     <div class="content">
                         <div class="inner">
@@ -92,7 +95,7 @@
                 </section>
                 <section>
                     <a href="#" class="image">
-                        <img src="images/pic03.jpg" alt="" data-position="25% 25%">
+                        <img src="{{{section1.item3.image}}}" alt="" data-position="top center">
                     </a>
                     <div class="content">
                         <div class="inner">
@@ -245,7 +248,10 @@
                     <li>
                         Design: <a href="http://html5up.net">HTML5 UP</a>
                     </li>
-                </ul>
+                    <li>
+                        <a href="https://www.vecteezy.com/free-photos/fintech">Fintech Stock photos by Vecteezy</a>
+                    </li>
+               </ul>
             </div>
         </footer>
 
