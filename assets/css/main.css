@@ -6,6 +6,14 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+:root {
+	--main-background-color: #223243;
+	--left-menu-background-color: #192431;
+	--section-one-background-color: #203953;
+	--section-two-background-color: #3a69a2;
+	--menu-item-default-underline-color: #28333e;
+}
+
 html,
 body,
 div,
@@ -113,7 +121,7 @@ body {
     line-height: 1;
     text-size-adjust: none;
     -ms-overflow-style: scrollbar;
-    background: #312450;
+    background: var(--left-menu-background-color);
 }
 
 ol,
@@ -291,7 +299,7 @@ h1.major {
 }
 
 h1.major::after {
-    background-image: linear-gradient(to right, #5e42a6, #b74e91);
+    background-image: linear-gradient(to right, var(--main-background-color), var(--section-two-background-color));
     transition: max-width 0.2s ease;
     border-radius: 0.2em;
     bottom: 0;
@@ -1984,7 +1992,7 @@ input[type='button'].primary,
 button.primary,
 .button.primary {
     background-color: #fff;
-    color: #312450 !important;
+    color: var(--left-menu-background-color) !important;
 }
 
 input[type='submit'].primary::after,
@@ -2339,7 +2347,7 @@ select {
 
 select option {
     color: #fff;
-    background: #312450;
+    background: var(--left-menu-background-color);
 }
 
 select:focus::-ms-value {
@@ -2424,7 +2432,7 @@ input[type='checkbox']:checked + label::before,
 input[type='radio']:checked + label::before {
     background: #fff;
     border-color: #fff;
-    color: #b74e91;
+    color: var(--section-two-background-color);
     content: '\f00c';
 }
 
@@ -2505,7 +2513,7 @@ input[type='radio'] + label::before {
     display: block;
     background: #fff;
     border-radius: 100%;
-    color: #312450;
+    color: var(--left-menu-background-color);
     text-align: center;
     line-height: 2.5em;
     margin: 0 0 1.3em;
@@ -2516,7 +2524,7 @@ input[type='radio'] + label::before {
 }
 
 .wrapper.style1 .icon.major::before {
-    color: #5e42a6;
+    color: var(--main-background-color);
 }
 
 .wrapper.style1-alt .icon.major::before {
@@ -2524,7 +2532,7 @@ input[type='radio'] + label::before {
 }
 
 .wrapper.style2 .icon.major::before {
-    color: #5052b5;
+    color: var(--section-one-background-color);
 }
 
 .wrapper.style2-alt .icon.major::before {
@@ -2532,7 +2540,7 @@ input[type='radio'] + label::before {
 }
 
 .wrapper.style3 .icon.major::before {
-    color: #b74e91;
+    color: var(--section-two-background-color);
 }
 
 .wrapper.style3-alt .icon.major::before {
@@ -3169,7 +3177,7 @@ table.alt tfoot {
 }
 
 .wrapper.style1 {
-    background-color: #5e42a6;
+    background-color: var(--main-background-color);
 }
 
 .wrapper.style1-alt {
@@ -3177,7 +3185,7 @@ table.alt tfoot {
 }
 
 .wrapper.style2 {
-    background-color: #5052b5;
+    background-color: var(--section-one-background-color);
 }
 
 .wrapper.style2-alt {
@@ -3185,7 +3193,7 @@ table.alt tfoot {
 }
 
 .wrapper.style3 {
-    background-color: #b74e91;
+    background-color: var(--section-two-background-color);
 }
 
 .wrapper.style3-alt {
@@ -3290,7 +3298,7 @@ body.is-preload .wrapper.fade > .inner {
     display: flex;
     display: -ms-flex;
     display: flex;
-    background-color: #5e42a6;
+    background-color: var(--main-background-color);
     cursor: default;
     padding: 1.75em 2em;
 }
@@ -3431,7 +3439,7 @@ body.is-preload .wrapper.fade > .inner {
 
 #sidebar {
     padding: 2.5em 2.5em 0.5em;
-    background: #312450;
+    background: var(--left-menu-background-color);
     cursor: default;
     height: 100vh;
     left: 0;
@@ -3598,11 +3606,11 @@ body.is-ie #sidebar > .inner {
 }
 
 #sidebar nav a::before {
-    background: #3c2c62;
+    background: var(--menu-item-default-underline-color);
 }
 
 #sidebar nav a::after {
-    background-image: linear-gradient(to right, #5e42a6, #b74e91);
+    background-image: linear-gradient(to right, var(--main-background-color), var(--section-two-background-color));
     transition: max-width 0.2s ease;
     max-width: 0;
 }
@@ -3681,7 +3689,7 @@ body.is-preload #sidebar nav ul li {
 
     #sidebar nav a::after {
         background-image: none;
-        background-color: #b74e91;
+        background-color: var(--section-two-background-color);
     }
 }
 
