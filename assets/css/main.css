@@ -435,6 +435,10 @@ hr.major {
     text-align: right;
 }
 
+.button.gone {
+    display: none;
+}
+
 /* Row */
 
 .row {
