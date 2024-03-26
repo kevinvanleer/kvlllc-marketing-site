@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "mustache kvlllc-copy/kvl-output-revised.json index.mustache.html index.html",
     "watch": "nodemon -e mustache.html,json --watch=kvlllc-copy/kvl-output-revised.json --watch=index.mustache.html --exec npm run compile",
-    "build": "build.sh",
-    "deploy": "gh-pages -d dist"
+    "build": "./build.sh",
+    "deploy": "./build.sh && gh-pages -d dist"
   },
   "repository": {
     "type": "git",

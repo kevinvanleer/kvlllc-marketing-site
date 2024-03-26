@@ -1,5 +1,6 @@
+rm -rf ./dist/**
 npm run compile
-mkdir dist
+mkdir -p dist
 cp index.html dist
 cp generic.html dist
 cp -r assets dist/assets
