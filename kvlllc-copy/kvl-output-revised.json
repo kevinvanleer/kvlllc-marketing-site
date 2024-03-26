@@ -5,12 +5,12 @@
   },
   "section1": {
     "item1": {
-      "image": "images/fintech.jpg",
+      "image": "images/fintech.webp",
       "heading": "FinTech",
       "paragraph": "We specialize in developing innovative FinTech solutions that help businesses streamline their financial operations and make informed decisions. Our expertise includes investment applications, payment processing systems, and financial modeling tools."
     },
     "item2": {
-      "image": "images/modeling-simulation.jpg",
+      "image": "images/modeling-simulation.webp",
       "heading": "Modeling and Simulation",
       "paragraph": "Our team has extensive experience in creating accurate models and simulations for various industries, enabling businesses to test hypotheses, optimize processes, and make data-driven decisions."
     },
