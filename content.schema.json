@@ -1,0 +1,192 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "main": {
+      "type": "object",
+      "properties": {
+        "heading": {
+          "type": "string"
+        },
+        "paragraph": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "heading",
+        "paragraph"
+      ]
+    },
+    "section1": {
+      "type": "object",
+      "properties": {
+        "item1": {
+          "type": "object",
+          "properties": {
+            "heading": {
+              "type": "string"
+            },
+            "paragraph": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "heading",
+            "paragraph"
+          ]
+        },
+        "item2": {
+          "type": "object",
+          "properties": {
+            "heading": {
+              "type": "string"
+            },
+            "paragraph": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "heading",
+            "paragraph"
+          ]
+        },
+        "item3": {
+          "type": "object",
+          "properties": {
+            "heading": {
+              "type": "string"
+            },
+            "paragraph": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "heading",
+            "paragraph"
+          ]
+        }
+      },
+      "required": [
+        "item1",
+        "item2",
+        "item3"
+      ]
+    },
+    "section2": {
+      "type": "object",
+      "properties": {
+        "heading": {
+          "type": "string"
+        },
+        "paragraph": {
+          "type": "string"
+        },
+        "item1": {
+          "type": "object",
+          "properties": {
+            "heading": {
+              "type": "string"
+            },
+            "paragraph": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "heading",
+            "paragraph"
+          ]
+        },
+        "item2": {
+          "type": "object",
+          "properties": {
+            "heading": {
+              "type": "string"
+            },
+            "paragraph": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "heading",
+            "paragraph"
+          ]
+        },
+        "item3": {
+          "type": "object",
+          "properties": {
+            "heading": {
+              "type": "string"
+            },
+            "paragraph": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "heading",
+            "paragraph"
+          ]
+        },
+        "item4": {
+          "type": "object",
+          "properties": {
+            "heading": {
+              "type": "string"
+            },
+            "paragraph": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "heading",
+            "paragraph"
+          ]
+        },
+        "item5": {
+          "type": "object",
+          "properties": {
+            "heading": {
+              "type": "string"
+            },
+            "paragraph": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "heading",
+            "paragraph"
+          ]
+        },
+        "item6": {
+          "type": "object",
+          "properties": {
+            "heading": {
+              "type": "string"
+            },
+            "paragraph": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "heading",
+            "paragraph"
+          ]
+        }
+      },
+      "required": [
+        "heading",
+        "paragraph",
+        "item1",
+        "item2",
+        "item3",
+        "item4",
+        "item5",
+        "item6"
+      ]
+    }
+  },
+  "required": [
+    "main",
+    "section1",
+    "section2"
+  ]
+}
